@@ -1,0 +1,331 @@
+/*  STYLING FOR ALL SCREENS, BUTTONS, INPUTS, LABELS, APIS, & HEADERS*/ 
+
+html {
+  font-size: 62.5%; 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+#root {
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lightblue;
+  color: black;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+header a {
+  color: black;
+  padding: 1rem;
+}
+
+a.brand {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.badge {
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.6rem;
+  margin-left: 0.2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.top {
+  align-items: flex-start;
+}
+
+.col-1 {
+  flex: 1 2 25rem;
+}
+
+.col-2 {
+  flex: 2 1 50rem;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+img.medium {
+  max-width: 35rem;
+  max-height: 50rem;
+  width: 100%;
+}
+
+img.large {
+  width: 75%;
+}
+
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.card_body {
+  padding: 1rem;
+}
+
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.rating span {
+  color: black;
+  margin: 0.1rem;
+}
+
+.rating span:last-child {
+  color: #404040;
+}
+
+.loading {
+  display: block !important;
+}
+
+.success {
+  color: #20a020;
+}
+
+.error {
+  color: #a02020;
+}
+
+button {
+  padding: 1rem;
+  color: black;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: lightyellow;
+}
+
+button.block {
+  width: 100%;
+}
+
+button:hover {
+  border: 0.1rem #404040 solid;
+}
+
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
+}
+
+.alert-info {
+  color: navy;
+  background-color: white;
+}
+
+.alert-danger {
+  color: #a02020;
+  background-color: #ffe0e0e0;
+}
+
+img.small {
+  max-width: 10rem;
+  width: 100%;
+}
+
+.gpaybutton {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.min-30 {
+  min-width: 30rem;
+}
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border-style: groove;
+  border-color: navy;
+  background-color: lightgrey;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.form label {
+  margin: 1rem 0;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  padding: 1rem;
+  z-index: 1;
+  background-color: lightblue;
+  margin: 0;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.checkout > div{
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+} 
+
+.checkout > div.active {
+  border-top-color: black;
+  color: black;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: white;
+  padding: 0.5rem;
+}
+.table button {
+  margin: 0 0.2rem;
+}
+
+button.small {
+  font-size: 1.2rem;
+}
+
+.full-container {
+  margin: -1rem;
+  height: calc(100% + 2rem);
+}
+.map-input-box {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0.5rem auto;
+  width: 25rem;
+  height: 4rem;
+  display: flex;
+}
+.map-input-box input {
+  border-radius: 1rem 0 0 1rem;
+  border-right: 0;
+}
+.map-input-box button {
+  border-radius: 0 1rem 1rem 0;
+  border-left: 0;
+}
